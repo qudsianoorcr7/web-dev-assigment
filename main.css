@@ -26,19 +26,17 @@ ul {
   }
   
   li {
-    float: left;
+    /* float: left; */
     border-right:3px;
   }
   
-  li:last-child {
-    border-right: none;
-  }
+ 
   
   li a {
-    display: block;
+    /* display: block; */
     color:black;
-    text-align: center;
-    padding: 20px 16px;
+    /* text-align: center; */
+    /* padding: 20px 16px; */
     text-decoration: none;
   }
   
@@ -46,28 +44,21 @@ ul {
     background-color: white;
   }
   
-  .active {
-    background-color: #bda8b3;
-  }
-
+  
 li a:hover{
-    background-color:#bda8b3;
+    background-color:#aa5d86;
 }
-    
-  
-  
-  
-   
 
-  
 
 main {
-    background-color:rgb(252,84,140);
-    color: black;
+    background-color: pink;
+    /* color: black; */
     grid-area: main;
 
 }
-aside{
+
+
+  aside{
     background-color: white;
     color: black;
     grid-area: aside;
