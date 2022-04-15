@@ -1,5 +1,4 @@
 
-
 body {
 display: grid;
 grid-template-areas:
@@ -12,13 +11,20 @@ grid-template-columns:100%;
 
 .index .top img {
     position: relative;
-    grid-area: top;
+    /* grid-area: top; */
     height: 18em;
     width: 20em;
     border-radius: 100%;
   /* grid-template-rows: auto; */
-  align-items: center;
-  display: flex;
+  margin-bottom: 4em;
+  /* align-items: center;
+  display: flex; */
+  }
+
+  .index .top {
+    align-items: center;
+    display: flex;
+    justify-content: center;
   }
 
   li {
@@ -35,6 +41,7 @@ nav ul
   display: flex;
     justify-content: space-around;
 }
+
 
 .home .top {
   grid-area: top;
@@ -64,6 +71,5 @@ nav ul
   width: 10vh;
   height: 20%;
 }
-.form{
-  
-}
+
+
