@@ -1,29 +1,65 @@
+body {
+    display:grid inline;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "nav"
+        "main"
+        "footer";
+}
+
 .shownav {
     height: 0.8em;
-    width:1.1em;
-    display:block;
-    border-top:0.2em solid white;
-    border-bottom:0.2em white;
-    border-radius:0.2em;
+    width: 1.25em;
+    display: block;
+     border-top: 0.2em solid white;
+    border-bottom: 0.2em solid white;
 }
-.nav:before {
-    content:'';
-     position: relative;
-     width: 1.1em;
-     border-top: 0.2em solid #fff;
-     margin-top: 0.3em;
-    }
-    nav {
-        display: block;
-        position: fixed;
-        top: 0;
-        left: 50%;
-        width: 50%;
-        height: 100vh;
-       }
-       
-       
-        
-        
-        
-        
+
+    .shownav {
+        height: 0.8em;
+        width: 1.25em;
+        display:block;
+         border-top: 0.2em solid white;
+         border-bottom: 0.2em solid white;
+         border-radius:0.1em;
+        }
+
+        .shownav:before {
+            content: '';
+             position:absolute;
+             width: 1.25em;
+             top: 0.3em;
+             left: 0px;
+             border-top: 0.2em solid #fff;
+            }
+
+nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100vh;
+    transform: translate(100%,0);
+    transition: transform 0.5s ease-in;
+    
+
+}
+
+#shownav:target .on {
+    display: block;
+}
+#shownav:target .off {
+    display: none;
+}
+#shownav .on {
+    display: none;
+}
+#shownav .off {
+    display: block;
+}
+#shownav:target nav {
+    display: block;
+    transform: translate(0, 0);
+}
